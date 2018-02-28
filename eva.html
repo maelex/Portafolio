@@ -1,0 +1,135 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Plataforma de apoyo EVA</title>
+	<link rel="icon" type="image/png" href="img/six-.png">
+	
+	<meta name="viewport" content="width=device-width, user-scalable=no, 
+	initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/flat.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/simplebox.css">
+
+	<style>
+		.gallery{
+			width: 100%;
+			padding: 20px 100px 50px;
+			background-color:#FFFFFF;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.gallery-item{
+			 margin: 0px 20px 20px 20px;
+		}
+		.img-gallery{
+			width: 300px;
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+		@media screen and (max-width: 700px){
+			.gallery{
+				padding: 20px 10px 50px;
+				display: flex;
+				justify-content: space-around;
+				flex-flow: row wrap;
+			}
+		}
+	</style>
+</head>
+<body id="page-top">
+	<div class="container">
+		<header>
+			<div class="logo">
+				<img src="img/six-.png" alt="logotipo" width="70">
+				<a data-scroll href="index.html">Codigo Seis</a>
+			</div>
+			<nav>
+				<a data-scroll class="test" href="#contact">Contacto</a>
+			</nav>
+		</header>		
+	</div>
+	<!--Seccion de galeria-->
+	<h2 style="text-align: center; padding-top: 140px;">Galeria</h2>
+	<section id="galeria" class="gallery "><!--SOBRE MI-->
+		<div class="gallery-item animated pulse">
+	    	<img class="slb img-gallery" src="img/App21.jpg" alt="app">
+		</div>
+		<div class="gallery-item animated pulse">
+	    	<img class="slb img-gallery" src="img/App22.jpg" alt="app">
+		</div>
+		<div class="gallery-item animated pulse">
+	    	<img class="slb img-gallery" src="img/App23.jpg" alt="app">
+		</div>
+		<div class="gallery-item animated pulse">
+	    	<img class="slb img-gallery" src="img/App24.jpg" alt="app">
+		</div>
+		<div class="gallery-item animated pulse">
+	    	<img class="slb img-gallery" src="img/App25.jpg" alt="app">
+		</div>
+		<div class="gallery-item animated pulse">
+	    	<img class="slb img-gallery" src="img/App26.jpg" alt="app">
+		</div>
+	</section>
+	<!--Seccion de contacto-->
+	<div id="contact" class="contactme">
+		<h2 style="text-align: center;">Contacto</h2>
+	  	<form class="form" method="post">
+	    	<ul class="flex-outer">
+	      		<li>
+	        		<label for="first-name">Nombre</label>
+	        		<input type="text" name="nombre" id="nombre" required>
+	      		</li>
+	      		<li>
+		        	<label for="email">Email</label>
+	    	    	<input type="email" name="email" id="email" required>
+	      		</li>
+	      		<li>
+	        		<label for="phone">Asunto</label>
+	        		<input type="text" name="asunto" id="asunto"  required>
+	      		</li>
+	      		<li>
+	        		<label for="mensaje">Mensaje</label>
+	        		<textarea rows="6" name="mensaje" id="mensaje" required></textarea>
+	      		</li>
+				<li>
+	        		<button type="submit">Enviar</button>
+	      		</li>
+	    	</ul>
+	    </form>
+	    <div class="mostrar" align="center"></div>
+	</div>
+	<footer>
+		<div class="first">
+			<p class="seis">&copy; 2017 Codigo Seis</p>
+			<div class="sociales">
+				<a href="https://t.me/magonzalez" target=”_blank”><i class="fa fa-telegram" aria-hidden="true"></i> </a>
+				<a href="https://github.com/maelex/" target=”_blank”> <i class="fa fa-github" aria-hidden="true"></i> </a>
+				<a HREF="mailto:&#097;&#108;&#101;&#120;&#109;&#105;&#103;&#117;&#101;&#108;&#103;&#111;&#110;&#122;&#097;&#108;&#101;&#122;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><i class="fa fa-envelope" aria-hidden="true"></i> </a>
+				<a href="https://www.google.com.mx/maps/place/Sayula,+Jal./@19.8798975,-103.6139883,14z/data=!3m1!4b1!4m8!1m2!7m1!2e1!3m4!1s0x842581215c38846f:0x8e3f75f82e750eb0!8m2!3d19.8786967!4d-103.5986549" target=”_blank”><i class="fa fa-map-marker" aria-hidden="true"></i> Sayula Jalisco</a>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/notify.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/simplebox.js"></script>
+	
+	<script>
+		//Simplebox
+		$('.slb').simplebox({
+		    fadeSpeed: 300, // default is 400ms, 
+		    darkMode: true // default is false
+		});
+		//Smooth Scroll
+		var scroll = new SmoothScroll('a[href*="#"]',{
+            speed:1500,
+        });
+    </script>	
+</body>
+</html>

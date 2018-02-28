@@ -1,0 +1,442 @@
+/*background: rgba(0,0,0,.5);*/
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700|Nunito:400,700');
+		*{ /*Reseteando los estilos de la pagina*/
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		html {
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+		
+		.container{
+			width: 100%;
+			background: #2c3e50;
+			position: fixed;
+  			z-index: 1;
+		}
+		header{
+			width: 90%;
+			margin: auto;
+			padding: 30px;
+
+			/*Flex header es padre pero tambien es hijo de container*/
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		header .logo{
+			color: #fff;
+			font-size: 30px;
+		}
+		header .logo img{
+			width: 50px;
+			vertical-align: top;
+		}
+		header .logo a{
+			color: #fff;
+			font-family: 'Fira Sans', sans-serif;
+			font-weight:700;
+			text-decoration: none;
+			line-height: 50px;
+		}
+		header nav a{
+			color: #fff;
+			font-family: 'Fira Sans', sans-serif;
+			font-weight:700;
+			text-decoration: none;
+		}
+		header nav{
+			width: 50%;
+			/*Flex*/
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+		header nav a{
+			font-weight:500;
+			color: #fff;
+			text-align: center;
+			text-decoration: none;
+			padding: 15px;
+
+			/*Flex*/
+			flex-grow: 1;
+			flex-basis: 0;
+		}
+		.test{
+			transition: 0.3s ease; 
+			border-top: 4px solid #2c3e50;
+			border-bottom: 4px solid #2c3e50;
+			padding: 5px 0;
+		}
+		nav a:hover{
+			border-top: 4px solid #ffffff;
+			border-bottom: 4px solid #ffffff;
+			padding: 5px 0;
+		}
+		/*media querys*/
+		@media screen and (max-width: 800px){
+			.contenedor{
+				flex-direction: column;
+			}
+			header{
+				flex-direction: column;
+				padding: 0;
+			}
+			header .logo{
+				margin: 20px 0;
+			}
+			header nav{
+				width: 100%;
+			}
+		}
+		/*FIN ESTILOS DE LA CABECERA*/
+
+		/*Sobre mi*/
+		.about{
+			width: 100%;
+			padding: 160px 100px 70px;
+			background-color:#ECF0F1;
+
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		
+		.img-about{
+			width: 300px;
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+		
+		.about-Text{
+			padding:30px;
+			direction:ltr;
+			text-align: justify;
+			text-decoration: none;
+		}
+		.about h2{
+			font-family: 'Nunito', sans-serif;
+			font-weight: 700;
+			line-height:1.25;
+		}
+		.about-Text span{
+			font-family: 'Fira Sans', sans-serif;
+			font-weight:700;
+			font-size: 15px;
+			line-height:1.10;
+		}
+		@media screen and (max-width: 800px){
+			.about{
+				padding: 160px 10px 50px;
+				display: flex;
+				justify-content: space-around;
+				flex-flow: row wrap;
+			}
+		}
+
+		/* SECCION DE SERVICIOS*/
+		.services{
+			width: 100%;
+			padding-top: 70px;
+    		padding-bottom: 50px;
+			background-color: #fff;
+		}
+		.title h2{
+			font-family: 'Nunito', sans-serif;
+			font-weight: 700;
+			color:#3490DC; 
+		}
+		.img-fluid{
+			margin:0 auto;
+			padding: 20px;
+			display:block;
+			background: #3490DC;
+			border-radius: 60%;
+		}
+		.post{
+			width: 90%;
+			margin: auto;
+			padding: 20px;
+			display: flex;
+			justify-content: space-between;
+		}
+		.posts{
+			width: 30%;
+			background: #fff;
+		}
+		.posts, .title-post, .descripcion{
+			padding: 10px;
+		}
+		.title-post, .descripcion{
+			background:#fff; 
+			text-align: center;
+		}
+		.posts .title-post a{
+			display: block;
+			text-decoration:none;
+			text-align: center;
+		}
+		.posts .title-post a h2{
+			font-family: 'Nunito', sans-serif;
+			font-weight: 700;
+			font-size:25px;
+			color: #212121;
+		}
+		.posts .descripcion{
+			font-family: 'Fira Sans', sans-serif;
+			font-weight:400;
+			font-size: 20px;
+			color:#2C3E50;
+			line-height: 24px;
+			text-decoration: none;
+		}
+		/*Media querys*/
+		@media screen and (max-width: 800px){
+			.services{
+				padding-top: 50px;
+			}
+			.post{
+				display: flex;
+				justify-content: space-around;
+				flex-flow: row wrap;
+			}
+			.posts{
+				width: 100%;
+			}
+			footer{
+				text-align: center;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+		@media screen and (max-width: 425px){
+			.post{
+				display: flex;
+				justify-content: space-around;
+				flex-flow: row wrap;
+			}
+			header nav a{
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+			}
+		}
+
+		/*Tarjetas de portafolio*/	
+		.cards{
+			width: 100%;
+	    	padding: 25px 100px 50px;
+			
+			/*FLEXBOX*/
+	    	display: flex;
+	    }		
+		.card{
+			flex:1 1 50%;
+			position: relative;
+			border:1px solid #efefef;
+		}
+
+		.card-content {
+			padding: 25px 25px 85px;
+		}
+
+		.card-details {
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+			left: 0;
+		}
+
+		.card-details-inner {
+			border-top: 1px solid #efefef;
+			margin: 0 30px;
+			padding: 30px 0;
+		}
+		
+		.card .card-content h1  {
+			font-family: 'Nunito', sans-serif;
+			font-weight: 700;
+			line-height:1.25;
+			margin: 0;
+			line-height:1.2;
+			color: #444444;
+		}
+
+		.card .card-content p {
+			margin: 0 0 30px;
+			font-family: 'Fira Sans', sans-serif;
+			font-weight:400;
+			color:#2C3E50;
+			line-height: 24px;
+			text-decoration: none;
+		}
+
+		.subtitle {
+			font-family: 'Nunito', sans-serif;
+			font-weight: 700;
+			margin: 0 0 15px;
+			font-size: 1.25rem;
+			color: #e76c67;
+		}
+		a {
+			color: #E76C67;
+			text-decoration: none;
+		}
+		.txt{
+			direction:ltr;
+			text-align: justify;
+			/* propiedad de CSS direction para indicar la dirección del texto: rtl(right to left) o ltr(left to right) que combinado con text-align: justify haría el efecto */
+		}
+
+		.button {
+			display: block;
+			font-size: 1rem;
+			background: #E76C67;
+			border: 1px solid #E76C67;
+			padding: .75rem 1rem;
+			color: white;
+			text-decoration: none;
+			font-weight: 700;
+			text-align: center;
+		}
+
+		.button:hover, .button:focus {
+    		background: #e0413b;
+    		border: 1px solid #e0413b; 
+		}
+		
+		.card {
+			box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
+			transition: all .3s ease;
+		}
+		.card:hover {
+			box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.2);
+		}
+		.card-image {
+    		height: 275px;
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+		@media screen and (max-width: 840px) {
+			.cards{
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex; 
+				flex-flow: row wrap;
+				padding: 25px;
+			} 
+			.card{
+				flex:1 1 100%;
+			}
+		}
+		
+		/*contactme*/
+		.contactme{
+			width: 100%;
+			background-color: #EEEEEE;
+		  	padding: 30px 20px;
+		}
+		.catactme h1{
+			font-family: 'Nunito', sans-serif;
+			font-weight: 700;
+			line-height:1.25; 
+		}
+		
+		.flex-outer {
+		  max-width: 80%;
+		  margin: 0 auto;
+		  list-style-type: none;
+		  padding: 0;
+		}
+		
+		.flex-outer li {
+		  margin-bottom: 20px;
+			/*FLEX*/
+		  display: flex;
+		  flex-wrap: wrap;
+		  align-items: center;
+		}
+
+		.flex-outer li {
+		  padding: 8px;
+		  font-weight: 400;
+		  letter-spacing: .09em;
+		  text-transform: uppercase;
+		}
+		.flex-outer > li > label {
+		  flex: 1 0 120px;
+		  max-width: 220px;
+		}
+		.flex-outer > li > label + *{
+		  flex: 1 0 220px;
+		}
+
+		.flex-outer li p {
+		  margin: 0;
+		}
+
+		.flex-outer li input {
+		  padding: 15px;
+		  border: none;
+		}
+		.flex-outer li textarea {
+		  padding: 15px;
+		  border: none;
+		}
+
+		.flex-outer li button {
+		  margin-left: auto;
+		  padding: 8px 16px;
+		  border: none;
+		  background: #333;
+		  color: #f2f2f2;
+		  text-transform: uppercase;
+		  letter-spacing: .09em;
+		  border-radius: 2px;
+		}
+		
+		/*FOOTER 	
+		footer{
+			width: 100%;
+			background: #22313F;
+			padding:50px 130px;
+			font-family: 'Fire Sans', sans-serif;
+			font-weight: 700;
+			color: #fff;
+			display: flex;
+			flex-direction:column;
+		}		
+		*/
+		
+		footer{
+			width: 100%;
+			background: #22313F;
+			padding:60px;
+			font-family: 'Fire Sans', sans-serif;
+			font-weight: 700;
+			font-size: 20px;
+			color: #fff;
+			text-align: center;
+			display: flex;
+			flex-direction:column;
+			align-items: center;
+		}
+		.sociales a{
+			color: #fff;
+		}
+		@media screen and (max-width: 768px){
+			footer .first{
+				padding: 30px 10px 30px;
+				display: flex;
+				justify-content: space-around;
+				flex-flow: row wrap;
+			}
+		}

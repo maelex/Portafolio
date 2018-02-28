@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Codigo Seis</title>
+	<link rel="icon" type="image/png" href="img/six-.png">
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="css/flat.css">
+
+</head>
+<body id="page-top">
+	<div class="container">
+		<header>
+			<div class="logo">
+				<img src="img/six-.png" alt="logotipo" width="70">
+				<a data-scroll href="#page-top">Codigo Seis</a>
+			</div>
+			<nav>
+				<a data-scroll class="test" href="#about">Sobre mi</a>
+				<a data-scroll class="test" href="#servicios">Servicios</a>
+				<a data-scroll class="test" href="#portafolio">Portafolio</a>
+				<a data-scroll class="test" href="#contact">Contacto</a>
+			</nav>
+		</header>		
+	</div>
+	<section id="about" class="about"><!--SOBRE MI-->
+		<div>
+			<img class="img-about" src="img/portada.jpg" alt="">
+		</div>
+		<div class="about-Text">
+			<h2 style="text-align: center;">Sobre mi</h2><br>
+			<span>Actualmente soy egresado de la Ingeniería en Telemática (con titulo en proceso), por parte de la Universidad
+			de Guadalajara campus CUSur ubicado en Ciudad Guzmán Jalisco, enfocado en el desarrollo web de calidad tanto en Frontend como Backend de todo tipo de proyecto y fundador de Codigo Seis una startup que se enfoca en desarrollar proyectos exitosos e innovadores.</span>
+		</div>
+	</section>
+	<main id="servicios" class="services"><!--Seccion de SERVICIOS-->
+		<div class="title">
+			<h2 align="center">Servicios</h2>
+		</div>
+		<section class="post">
+			<article class="posts">
+				<div class="image">
+					<img src="img/flat10.png" alt="Responsive Design" class="img-fluid">
+				</div>
+				<div class="title-post">
+					<a href="">
+						<h2>Full Stack Dev</h2>
+					</a>
+				</div>
+				<div class="descripcion">
+					Full Stack Web Development con Java, 
+					PHP y SQL/MySQL para convertir tus ideas 
+					en durareras y escalables soluciones.
+				</div>
+			</article>
+			<article class="posts">
+				<div class="image">
+					<img src="img/flat12.png" alt="Responsive Design" class="img-fluid">
+				</div>
+				<div class="title-post">
+					<a href="">
+						<h2>Responsive Web Design</h2>
+					</a>
+				</div>
+				<div class="descripcion">
+					Hacemos tus ideas  adaptables a cualquier tipo de dispositivo para que se vean increibles en cada uno de ellos.
+				</div>
+			</article>
+			<article class="posts">
+				<div class="image">
+					<img src="img/flat11.png" alt="Responsive Design" class="img-fluid">
+				</div>
+				<div class="title-post">
+					<a href="">
+						<h2>W3C</h2>
+					</a>
+				</div>
+				<div class="descripcion">
+					Volvemos tus ideas accesibles
+					a cualquier persona sin importar
+					sus conocimientos o capacidades fisicas.
+				</div>
+			</article>
+		</section>
+	</main>
+	<!--Seccion de PORTAFOLIO -->
+	<h2 id="portafolio" style="text-align: center; font-family: 'Nunito', sans-serif;">Portafolio</h2>
+	<div class="cards">
+		<div class="card"><!--Primera tarjeta-->
+			<div class="card-image" style="background-image: url(img/App18.jpg)"></div>
+			<div class="card-content"> 
+				<h1>Centro de monitoreo activo - 2017</h1>
+				<div class="subtitle">Laguna de Zapotlán el Grande
+				</div>
+				<p class="txt">Herramienta para el monitoreo de la Laguna de Zapotlan el Grande a cargo del Centro de Investigación Lago de Zapotlán y Cuencas (CILZC) del Centro Universitario del Sur (CUSur) en coordinación con Laboratorio de innovacion del Departamento de Ciencias Computacionales e Innovación Tecnológica, para preservación y conservación de la misma.</p>
+			</div>
+			<div class="card-details">
+				<div class="card-details-inner">
+					<div class="read-more">
+						<a href="monitoreo.html" class="button">Ver mas</a>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Plataforma de apoyo-->
+		<div class="card"><!--Segunda tarjeta-->
+			<div class="card-image" style="background-image: url(img/App21.jpg)"></div>
+			<div class="card-content"> 
+				<h1>Plataforma de apoyo EVA - 2016</h1>
+				<div class="subtitle">
+					Espacios virtuales de aprendizaje.
+				</div>
+				<p class="txt">
+					Herramienta de apoyo para la unidad de Espacios Virtuales de Aprendizaje con la finalidad de agilizar y mejorar el proceso de obtencion de datos estadisticos primordiales para el departamento en beneficio de estudiantes y profesores del Centro Univeristario del Sur (CUSur).
+				</p>
+			</div>
+			<div class="card-details">
+				<div class="card-details-inner">
+					<div class="read-more">
+						<a href="eva.html" class="button">Ver mas</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Seccion de contacto-->
+	<div id="contact" class="contactme">
+		<h2 style="text-align: center;">Contacto</h2>
+	  	<form id="form" method="post">
+	    	<ul class="flex-outer">
+	      		<li>
+	        		<label for="first-name">Nombre</label>
+	        		<input type="text" name="nombre" id="nombre" required>
+	      		</li>
+	      		<li>
+		        	<label for="email">Email</label>
+	    	    	<input type="email" name="email" id="email" required>
+	      		</li>
+	      		<li>
+	        		<label for="phone">Asunto</label>
+	        		<input type="text" name="asunto" id="asunto"  required>
+	      		</li>
+	      		<li>
+	        		<label for="mensaje">Mensaje</label>
+	        		<textarea rows="6" name="mensaje" id="mensaje" required></textarea>
+	      		</li>
+				<li>
+	        		<button type="submit">Enviar</button>
+	      		</li>
+	    	</ul>
+	    </form>
+	    <div class="mostrar" align="center"></div>
+	</div>
+	<footer>
+		<div class="first">
+			<p class="seis">&copy; 2017 Codigo Seis</p>
+			<div class="sociales">
+				<a href="https://t.me/magonzalez" target=”_blank”><i class="fa fa-telegram" aria-hidden="true"></i> </a>
+				<a href="https://github.com/maelex/" target=”_blank”> <i class="fa fa-github" aria-hidden="true"></i> </a>
+				<a HREF="mailto:&#097;&#108;&#101;&#120;&#109;&#105;&#103;&#117;&#101;&#108;&#103;&#111;&#110;&#122;&#097;&#108;&#101;&#122;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><i class="fa fa-envelope" aria-hidden="true"></i> </a>
+				<a href="https://www.google.com.mx/maps/place/Sayula,+Jal./@19.8798975,-103.6139883,14z/data=!3m1!4b1!4m8!1m2!7m1!2e1!3m4!1s0x842581215c38846f:0x8e3f75f82e750eb0!8m2!3d19.8786967!4d-103.5986549" target=”_blank”><i class="fa fa-map-marker" aria-hidden="true"></i> Sayula Jalisco</a>
+			</div>
+		</div>
+	</footer>	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/notify.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+	<!--
+	http://www.elmaquetadorweb.com/2015/04/contador-de-caracteres-para-input.html
+	-->
+	<script>
+		//Smooth Scroll
+		var scroll = new SmoothScroll('a[href*="#"]',{
+            speed:1500,
+        });
+		//Enviar email ajax
+		$(function () {
+			$('#form').submit(function (e) {
+				e.preventDefault();
+				$.ajax({
+					url:'scripts/enviar_datos.php',
+					method:'POST',
+					data:$(this).serialize(),
+					success:function (data) {
+						console.log(data);
+						if (data=="error1") {
+							$.notify("Error al envair el mensaje","error");
+						}else if(data=="correcto"){
+							$.notify("Mensaje enviado","success");
+							$("#nombre").val(" ");
+							$("#email").val(" ");
+							$("#asunto").val(" ");
+							$("#mensaje").val(" ");
+						}
+					}
+				});
+				return false;
+			});
+		});
+	</script>
+</body>
+</html>
